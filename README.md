@@ -8,10 +8,10 @@ docker run --name postgres-latest -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD
 ```sh
 docker run -dp 3306:3306 \
 --name world-db \
--e MARIADB_USER=mariadb_user \
--e MARIADB_PASSWORD=mariadb_user \
--e MARIADB_ROOT_PASSWORD=root-mariadb-user \
--e MARIADB_DATABASE=world-db \
+--env MARIADB_USER=mariadb_user \
+--env MARIADB_PASSWORD=mariadb_user \
+--env MARIADB_ROOT_PASSWORD=root-mariadb-user \
+--env MARIADB_DATABASE=world-db \
 mariadb:jammy
 ```
 
@@ -19,10 +19,10 @@ mariadb:jammy
 ```sh
 docker run -dp 3306:3306  mariadb:jammy `
 --name world-db`
--e MARIADB_USER=mariadb_user `
--e MARIADB_PASSWORD=mariadb_user `
--e MARIADB_ROOT_PASSWORD=root-mariadb-user `
--e MARIADB_DATABASE=world-db `
+--env MARIADB_USER=mariadb_user `
+--env MARIADB_PASSWORD=mariadb_user `
+--env MARIADB_ROOT_PASSWORD=root-mariadb-user `
+--env MARIADB_DATABASE=world-db `
 mariadb:jammy
 ```
 
