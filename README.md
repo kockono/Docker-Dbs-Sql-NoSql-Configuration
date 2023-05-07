@@ -13,7 +13,7 @@ MARIADB_ROOT_PASSWORD=root-mariadb-user \
 MARIADB_DATABASE=world-db
 ```
 
-### MariaDb Windows
+### MariaDb Windows PowerShell
 ```sh
 docker run --name mariadb -dp 3306:3306 mariadb `
 -e MARIADB_USER=mariadb_user `
