@@ -6,12 +6,13 @@ docker run --name postgres-latest -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD
 ```
 ### MariaDb
 ```sh
-docker run -dp 3306:3306 mariadb:jimmy \
+docker run -dp 3306:3306 \
 --name world-db \
 -e MARIADB_USER=mariadb_user \
 -e MARIADB_PASSWORD=mariadb_user \
 -e MARIADB_ROOT_PASSWORD=root-mariadb-user \
--e MARIADB_DATABASE=world-db 
+-e MARIADB_DATABASE=world-db \
+mariadb:jammy
 ```
 
 ### MariaDb Windows PowerShell
@@ -21,7 +22,8 @@ docker run -dp 3306:3306  mariadb:jimmy `
 -e MARIADB_USER=mariadb_user `
 -e MARIADB_PASSWORD=mariadb_user `
 -e MARIADB_ROOT_PASSWORD=root-mariadb-user `
--e MARIADB_DATABASE=world-db 
+-e MARIADB_DATABASE=world-db `
+mariadb:jammy
 ```
 
 ### Azure SQL Edge
