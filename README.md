@@ -17,7 +17,7 @@ mariadb:jammy
 
 ### MariaDb Windows PowerShell
 ```sh
-docker run -dp 3306:3306  mariadb:jimmy `
+docker run -dp 3306:3306  mariadb:jammy `
 --name world-db`
 -e MARIADB_USER=mariadb_user `
 -e MARIADB_PASSWORD=mariadb_user `
