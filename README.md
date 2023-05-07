@@ -22,8 +22,7 @@ docker run -dp 3306:3306  mariadb:jammy `
 --env MARIADB_USER=mariadb_user `
 --env MARIADB_PASSWORD=mariadb_user `
 --env MARIADB_ROOT_PASSWORD=root-mariadb-user `
---env MARIADB_DATABASE=world-db `
-mariadb:jammy
+--env MARIADB_DATABASE=world-db 
 ```
 
 ### Azure SQL Edge
