@@ -13,10 +13,20 @@ MARIADB_ROOT_PASSWORD=root-mariadb-user \
 MARIADB_DATABASE=world-db
 ```
 
+### MariaDb Windows
+```sh
+docker run --name mariadb -dp 3306:3306 MariaDB `
+-e MARIADB_USER=mariadb_user `
+-e MARIADB_PASSWORD=mariadb_user `
+-e MARIADB_ROOT_PASSWORD=root-mariadb-user `
+-e MARIADB_DATABASE=world-db
+```
+
 ### Azure SQL Edge
 ```
 docker pull mcr.microsoft.com/azure-sql-edge
 ```
+
 
 #### Configurar Imagen
 ```sh
