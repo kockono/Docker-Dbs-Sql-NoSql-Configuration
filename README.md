@@ -6,7 +6,7 @@ docker run --name postgres-latest -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD
 ```
 ### MariaDb
 ```sh
-docker run -dp 3306:3306  mariadb\
+docker run -dp 3306:3306 mariadb:jimmy \
 --name world-db \
 -e MARIADB_USER=mariadb_user \
 -e MARIADB_PASSWORD=mariadb_user \
@@ -16,7 +16,7 @@ docker run -dp 3306:3306  mariadb\
 
 ### MariaDb Windows PowerShell
 ```sh
-docker run -dp 3306:3306 mariadb `
+docker run -dp 3306:3306  mariadb:jimmy `
 --name world-db`
 -e MARIADB_USER=mariadb_user `
 -e MARIADB_PASSWORD=mariadb_user `
