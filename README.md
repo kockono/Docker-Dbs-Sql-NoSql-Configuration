@@ -4,7 +4,7 @@
 ```sh
 docker run --name postgres-latest -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -dp 5432:5432 postgres 
 ```
-### MariaDb
+### MariaDb Linux Mac
 ```sh
 docker container run -dp 3306:3306 \
 --name world-db \
