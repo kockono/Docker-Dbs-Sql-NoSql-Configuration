@@ -12,6 +12,7 @@ docker container run -dp 3306:3306 \
 --env MARIADB_PASSWORD=mariadb_user \
 --env MARIADB_ROOT_PASSWORD=root-mariadb-user \
 --env MARIADB_DATABASE=world-db \
+--volume world-db:var/lib/mysql \
 mariadb:jammy
 ```
 
@@ -23,6 +24,7 @@ docker container run -dp 3306:3306 `
 --env MARIADB_PASSWORD=mariadb_user `
 --env MARIADB_ROOT_PASSWORD=root-mariadb-user `
 --env MARIADB_DATABASE=world-db `
+--volume world-db:var/lib/mysql `
 mariadb:jammy
 ```
 
